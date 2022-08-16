@@ -1,0 +1,21 @@
+﻿@model List<Tipo>
+
+<h1>TIPOS</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>Tipo</th>
+		</tr>
+	</thead>
+		
+	<tbody>
+		@foreach (var tipo in Model)
+		{
+			<tr>
+				<td>@Html.DisplayFor(m => tipo.Descripcion)</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
